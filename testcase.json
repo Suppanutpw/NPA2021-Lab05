@@ -1,0 +1,83 @@
+[
+  {
+     "Hostname":"R1",
+     "Interfaces":[
+         {
+            "Interface":"G0/0",
+            "IP":"172.31.107.4",
+            "Subnet":"255.255.255.240",
+            "Description": ""
+         },
+         {
+           "Interface":"G0/1",
+           "IP":"172.31.107.17",
+           "Subnet":"255.255.255.240",
+           "Description": ""
+         },
+         {
+            "Interface":"G0/2",
+            "IP":"172.31.107.33",
+            "Subnet":"255.255.255.240",
+            "Description": ""
+         },
+         {
+            "Interface":"G0/3",
+            "IP":"unassigned",
+            "Subnet":"unassigned",
+            "Description": ""
+         }
+     ]
+  },
+  {
+     "Hostname":"R2",
+     "Interfaces":[
+         {
+            "Interface":"G0/0",
+            "IP":"172.31.107.5",
+            "Subnet":"255.255.255.240",
+            "Description": ""
+         },
+        {
+           "Interface":"G0/1",
+           "IP":"172.31.107.34",
+           "Subnet":"255.255.255.240",
+           "Description": ""
+        },
+        {
+           "Interface":"G0/2",
+           "IP":"172.31.107.49",
+           "Subnet":"255.255.255.240",
+           "Description": ""
+        },
+        {
+           "Interface":"G0/3",
+           "IP":"unassigned",
+           "Subnet":"unassigned",
+           "Description": ""
+        }
+     ]
+  },
+  {
+     "Hostname":"R3",
+     "Interfaces":[
+         {
+            "Interface":"G0/0",
+            "IP":"172.31.107.6",
+            "Subnet":"255.255.255.240",
+            "Description": ""
+         },
+        {
+           "Interface":"G0/1",
+           "IP":"172.31.107.50",
+           "Subnet":"255.255.255.240",
+           "Description": ""
+        },
+        {
+           "Interface":"G0/3",
+           "IP":"unassigned",
+           "Subnet":"unassigned",
+           "Description": ""
+        }
+     ]
+  }
+]
