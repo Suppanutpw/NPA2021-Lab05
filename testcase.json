@@ -6,19 +6,19 @@
             "Interface": "G0/0",
             "IP": "172.31.107.4",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/0 of R1"
+            "Description": "Connect to G0/2 of S0"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.17",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/1 of R1"
+            "Description": "Connect to G0/2 of S1"
          },
          {
             "Interface": "G0/2",
             "IP": "172.31.107.33",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of R1"
+            "Description": "Connect to G0/1 of R2"
          },
          {
             "Interface": "G0/3",
@@ -35,19 +35,19 @@
             "Interface": "G0/0",
             "IP": "172.31.107.5",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/0 of R2"
+            "Description": "Connect to G0/3 of S0"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.34",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/1 of R2"
+            "Description": "Connect to G0/2 of R1"
          },
          {
             "Interface": "G0/2",
             "IP": "172.31.107.49",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of R2"
+            "Description": "Connect to G0/1 of R3"
          },
          {
             "Interface": "G0/3",
@@ -64,13 +64,13 @@
             "Interface": "G0/0",
             "IP": "172.31.107.6",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/0 of R3"
+            "Description": "Connect to G1/0 of S0"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.50",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/1 of R3"
+            "Description": "Connect to G0/2 of R2"
          },
          {
             "Interface": "G0/3",
