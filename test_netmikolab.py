@@ -42,7 +42,7 @@ def test_subnet():
     index = 0
     for device in routersJson:
       for interface in device['Interfaces']:
-        assert get_ip(device_params[index], interface["Interface"]) == interface["Subnet"]
+        assert get_subnet(device_params[index], interface["Interface"]) == interface["Subnet"]
       index += 1
 
 def test_description():
