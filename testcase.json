@@ -1,82 +1,105 @@
 [
    {
       "Hostname": "R1",
+      "IP": "172.31.107.4",
+      "Username": "admin",
+      "Password": "cisco",
+      "Device_type": "cisco_ios",
       "Interfaces": [
          {
             "Interface": "G0/0",
             "IP": "172.31.107.4",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of S0"
+            "Description": "Connect to G0/2 of S0",
+            "Status": "up"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.17",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of S1"
+            "Description": "Connect to G0/2 of S1",
+            "Status": "up"
          },
          {
             "Interface": "G0/2",
             "IP": "172.31.107.33",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/1 of R2"
+            "Description": "Connect to G0/1 of R2",
+            "Status": "up"
          },
          {
             "Interface": "G0/3",
             "IP": "unassigned",
             "Subnet": "unassigned",
-            "Description": "Not Use"
+            "Description": "Not Use",
+            "Status": "admin down"
          }
       ]
    },
    {
       "Hostname": "R2",
+      "IP": "172.31.107.5",
+      "Username": "admin",
+      "Password": "cisco",
+      "Device_type": "cisco_ios",
       "Interfaces": [
          {
             "Interface": "G0/0",
             "IP": "172.31.107.5",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/3 of S0"
+            "Description": "Connect to G0/3 of S0",
+            "Status": "up"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.34",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of R1"
+            "Description": "Connect to G0/2 of R1",
+            "Status": "up"
          },
          {
             "Interface": "G0/2",
             "IP": "172.31.107.49",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/1 of R3"
+            "Description": "Connect to G0/1 of R3",
+            "Status": "up"
          },
          {
             "Interface": "G0/3",
             "IP": "unassigned",
             "Subnet": "unassigned",
-            "Description": "Not Use"
+            "Description": "Not Use",
+            "Status": "admin down"
          }
       ]
    },
    {
       "Hostname": "R3",
+      "IP": "172.31.107.6",
+      "Username": "admin",
+      "Password": "cisco",
+      "Device_type": "cisco_ios",
       "Interfaces": [
          {
             "Interface": "G0/0",
             "IP": "172.31.107.6",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G1/0 of S0"
+            "Description": "Connect to G1/0 of S0",
+            "Status": "up"
          },
          {
             "Interface": "G0/1",
             "IP": "172.31.107.50",
             "Subnet": "255.255.255.240",
-            "Description": "Connect to G0/2 of R2"
+            "Description": "Connect to G0/2 of R2",
+            "Status": "up"
          },
          {
             "Interface": "G0/3",
             "IP": "unassigned",
             "Subnet": "unassigned",
-            "Description": "Not Use"
+            "Description": "Not Use",
+            "Status": "admin down"
          }
       ]
    }
