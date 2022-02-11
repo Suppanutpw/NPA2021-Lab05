@@ -19,7 +19,7 @@ def get_ip(device_params, intf):
             return intf_ip
 
 def get_subnet(device_params, intf):
-  data = get_data_from_device(device_params, 'sh int ' + intf)
+  data = get_data_from_device(device_params, 'sh gitint ' + intf)
   try:
     cdiraddress = re.search(r'  Internet address is ([0-9./]+)', data).groups()
     return "%s"%IPNetwork(cdiraddress[0]).netmask
