@@ -31,6 +31,24 @@ def get_description(device_params, intf):
   data = get_data_from_device(device_params, 'sh int description')
   result = data.strip().split('\n')
   for line in result[1:]:
-    #print(line)
-    intf = re.search(r'\s\w+\s\w+', line)
-    print(intf)
+    line += ' '
+    intf_type, intf_num, _, _, description = re.search(r'(\w)\w([0-9/]+)\s+(admin down|\w+)\s+(\w+)([0-9a-zA-Z\s/]+|null)', line).groups()
+    if intf_type == intf[0] and intf_num == intf[1:]:
+      return description
+
+def get_status(device_params, intf):
+  data = get_data_from_device(device_params, 'sh int description')
+  result = data.strip().split('\n')
+  for line in result[1:]:
+    line += ' '
+    intf_type, intf_num, status, _, _ = re.search(r'(\w)\w([0-9/]+)\s+(admin down|\w+)\s+(\w+)([0-9a-zA-Z\s/]+|null)', line).groups()
+    if intf_type == intf[0] and intf_num == intf[1:]:
+      return status
+
+def set_description(device_params, intf):
+  data = get_data_from_device(device_params, 'sh cdp nei')
+  result = data.strip().split('\n')
+  for line in result[5:]:
+    print(line)
+
+set_intfdescription(device_params, "G0/1")
