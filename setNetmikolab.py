@@ -49,28 +49,20 @@ def get_interface_list(device_params):
         interfaces.append("%s%s"%(intf_type, intf_num))
     return interfaces
 
-username = 'admin'
-password = 'cisco'
-device_params = [
+jsonFile = open("testcase.json", "r")
+routersJson = json.load(jsonFile)
+jsonFile.close()
+
+device_params = []
+for routerJson in routersJson:
+  device_params.append(
     {
-        'device_type': 'cisco_ios',
-        'ip': "172.31.107.4",
-        'username': username,
-        'password': password
-    },
-    {
-        'device_type': 'cisco_ios',
-        'ip': "172.31.107.5",
-        'username': username,
-        'password': password
-    },
-    {
-        'device_type': 'cisco_ios',
-        'ip': "172.31.107.6",
-        'username': username,
-        'password': password
+      'device_type': routerJson["Device_type"],
+      'ip': routerJson["IP"],
+      'username': routerJson["Username"],
+      'password': routerJson["Password"]
     }
-]
+  )
 
 for device_param in device_params:
     for interface in get_interface_list(device_param):

@@ -1,6 +1,6 @@
 import json
 import pytest
-from getNetmikolab import *
+from netmikolabfinal import *
 
 jsonFile = open("testcase.json", "r")
 routersJson = json.load(jsonFile)
